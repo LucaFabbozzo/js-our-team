@@ -10,10 +10,6 @@
 // Aggiungere degli aggettivi (più di uno) che identifichino ogni persona e stamparli nella card
 
 
-
-// **MILESTONE 0:**
-// Creare l’array di oggetti con le informazioni fornite.
-
 const output = document.querySelector('.row');
 
 
@@ -50,7 +46,19 @@ const team = [
   }
 ];
 
+
+//aggettivi
+team[0].adjectives = "Great Team Leader always Untiring"
+team[1].adjectives = "Unconventional Girl"
+team[2].adjectives = "With clear Ideas"
+team[3].adjectives = "Little Angie"
+team[4].adjectives = "Problem Solver"
+team[5].adjectives = "Always Smiling"
+
+
 for(let infos of team) {
+
+  
   let card = `
   <div class="col py-4">
     <div class="card" style="width: 18rem;">
@@ -58,6 +66,7 @@ for(let infos of team) {
       <div class="card-body">
         <h5 class="card-title text-center">${infos.name}</h5>
         <p class="card-text text-center">${infos.role}</p>
+        <p class="card-adjectives text-center">${infos.adjectives}</p>
       </div>
     </div>
   </div>
@@ -66,3 +75,4 @@ for(let infos of team) {
   output.innerHTML += card;
 
 }
+
