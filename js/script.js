@@ -46,3 +46,9 @@ const team = [
     photo: "barbara-ramos-graphic-designer.jpg"
   }
 ];
+
+for(let infos of team) {
+  console.log("Name: " + infos.name);
+  console.log("Role: " + infos.role);
+  console.log("Photo: " + infos.photo);
+}
