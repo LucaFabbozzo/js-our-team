@@ -56,13 +56,15 @@ team[4].adjectives = "Problem Solver";
 team[5].adjectives = "Always Smiling";
 
 
+
 for(let infos of team) {
 
   
   let card = `
   <div class="col py-4">
-    <div class="card" style="width: 18rem;">
-      <img src="${infos.photo}" class="card-img-top" alt="...">
+    <div class="card" style="width: 20em; cursor: pointer; transition-duration: 0.5s;" onmouseover="this.style.transform='scale(1.05)';"
+    onmouseout="this.style.transform='scale(1)';">
+      <img src="${infos.photo}" class="card-img-top">
       <div class="card-body">
         <h5 class="card-title text-center">${infos.name}</h5>
         <p class="card-text text-center">${infos.role}</p>
