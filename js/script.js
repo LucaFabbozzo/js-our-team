@@ -48,12 +48,12 @@ const team = [
 
 
 //aggettivi
-team[0].adjectives = "Great Team Leader always Untiring"
-team[1].adjectives = "Unconventional Girl"
-team[2].adjectives = "With clear Ideas"
-team[3].adjectives = "Little Angie"
-team[4].adjectives = "Problem Solver"
-team[5].adjectives = "Always Smiling"
+team[0].adjectives = "Great Team Leader always Untiring";
+team[1].adjectives = "Unconventional Girl";
+team[2].adjectives = "With clear Ideas";
+team[3].adjectives = "Little Angie";
+team[4].adjectives = "Problem Solver";
+team[5].adjectives = "Always Smiling";
 
 
 for(let infos of team) {
@@ -66,7 +66,7 @@ for(let infos of team) {
       <div class="card-body">
         <h5 class="card-title text-center">${infos.name}</h5>
         <p class="card-text text-center">${infos.role}</p>
-        <p class="card-adjectives text-center">${infos.adjectives}</p>
+        <p class="card-adjectives text-center" style="font-size: 0.9rem">${infos.adjectives}</p>
       </div>
     </div>
   </div>
