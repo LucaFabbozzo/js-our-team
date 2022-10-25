@@ -14,6 +14,9 @@
 // **MILESTONE 0:**
 // Creare l’array di oggetti con le informazioni fornite.
 
+const output = document.querySelector('#output');
+
+
 const team = [
   {
     name: "Wayne Barnett",
@@ -48,7 +51,16 @@ const team = [
 ];
 
 for(let infos of team) {
-  console.log("Name: " + infos.name);
-  console.log("Role: " + infos.role);
-  console.log("Photo: " + infos.photo);
+  let strings = `
+  <table>
+  <tr>
+   <td>${infos.name}/</td><br>
+   <td>${infos.role}/</td>
+   <td>${infos.photo}</td>
+  </tr>
+  </table>
+ `;
+
+  output.innerHTML += strings;
+
 }
