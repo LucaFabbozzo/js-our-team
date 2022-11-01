@@ -105,14 +105,24 @@ function addNewMember() {
   const name = document.getElementById('name').value;
   const role = document.getElementById('role').value;
   const photo = document.getElementById('image').value;
+  const qualities = document.getElementById('qualities').value;
+
+  const arrNewQualities = qualities.split(',');
+  const cleanNewQualities = arrNewQualities.map( quality => {
+    return quality.trim();
+  })
+
+  console.log(cleanNewQualities);
 
   //Creo un oggetto con tutti i valori necessari
   const newTeamMember = {
     name: name,
     role: role,
-    photo: photo
+    photo: photo,
+    qualities: qualities.split(',')
   }
 
+  console.log(newTeamMember)
    //Invio il nuovo oggetto a drawTeamMember
    drawTeamMember(newTeamMember);
 
@@ -126,5 +136,6 @@ function addNewMember() {
     document.getElementById('name').value = '';
     document.getElementById('role').value = '';
     document.getElementById('image').value = '';
+    document.getElementById('qualities').value = '';
   }
  }
