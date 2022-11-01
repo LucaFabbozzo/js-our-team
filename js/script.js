@@ -16,7 +16,7 @@ const team = [
     role: "Founder & CEO",
     photo: "img/wayne-barnett-founder-ceo.jpg",
     qualities: ['Great Team Leader',
-    'always Untiring'
+    'Always Untiring'
     ]
   },
   {
@@ -88,7 +88,7 @@ function drawTeamMember(teamMember) {
       <div class="card-body">
         <h5 class="card-title text-center">${name}</h5>
         <p class="card-text text-center">${role}</p>
-        <p class="card-adjectives text-center" style="font-size: 0.9rem">${qualities}</p>
+        <p class="card-adjectives text-center" style="font-size: 0.9rem">${qualities.join(' - ')}</p>
       </div>
     </div>
   </div>
